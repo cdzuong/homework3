@@ -1,4 +1,4 @@
-# homework3
+# Homework 3
 Due on Wednesday, September 12 by 11:59pm
 
 Use the following link to to create your private github repository for this assignment: 
@@ -12,38 +12,7 @@ In this lab, you will practice using ArrayLists and loops, including nested loop
 - Organization
 
 Please read comments above each method. Do not modify class Employee, tests or the starter code except where the comments explicitly tell you to add your own code. Do not change the structure of the project.
-Note that in class StarPatterns, you are required to use nested loops to get credit for the homework.
-
-In StarPatterns, here are examples of the patterns you are expected to produce (note that your code is expected to work for any n):
-drawSquare(9) should produce the following pattern (note that the number of stars depends on n, do not hardcode it!):
-
-* * * * * * * * * 
-* * * * * * * * * 
-* * * * * * * * * 
-* * * * * * * * * 
-* * * * * * * * * 
-* * * * * * * * * 
-* * * * * * * * * 
-* * * * * * * * * 
-* * * * * * * * * 
-
-drawTwoTriangles(9) should produce the following pattern of stars and minuses (note that the number of stars and minuses depends on n, do not hardcode it!):
-* - - - - - - - - 
-* * - - - - - - - 
-* * * - - - - - - 
-* * * * - - - - - 
-* * * * * - - - - 
-* * * * * * - - - 
-* * * * * * * - - 
-* * * * * * * * - 
-* * * * * * * * * 
-
-drawThreeTriangles(9) should produce the following pattern:
-- - - - * - - - - 
-- - - * * * - - - 
-- - * * * * * - - 
-- * * * * * * * - 
-* * * * * * * * * 
+Note that in class StarPatterns, you are required to use nested loops to get credit for the homework. To see examples of patterns that you are expected to produce in class StarPatterns, please see starPatterns.pdf on Canvas (under homework 3) (note that your code is expected to work for any n.
 
 ### Submission Instructions
 
