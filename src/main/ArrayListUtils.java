@@ -151,22 +151,30 @@ public class ArrayListUtils {
         int i = 0;
         int j = 0;
 
-        while (i < arr2.size()) {
-            while (j < arr2.size()) {
-                if (arr1.get(i) <= arr2.get(j)) {
-                    res.add(arr1.get(i));
-                    i++;
-                } else {
-                    res.add(arr2.get(j));
-                    j++;
+        if (arr1.size() != 0) {
+            while (i < arr1.size()) {
+                while (j < arr1.size()) {
+                    if (arr1.get(i) <= arr2.get(j)) {
+                        res.add(arr1.get(i));
+                        i++;
+                    } else {
+                        res.add(arr2.get(j));
+                        j++;
+
+
+                    }
 
 
                 }
 
-
             }
-
         }
+        else {
+            for (int k = 0; k < arr2.size(); k++) {
+                res.add(arr2.get(k));
+            }
+        }
+
 
 
 // add arrays together
