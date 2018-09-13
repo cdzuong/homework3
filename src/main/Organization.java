@@ -32,6 +32,14 @@ public class Organization {
         // FILL IN CODE
 
 
+
+for (int i = 0; i < employees.size(); i++) {
+
+    employees.get(i).increaseSalary(percentage);
+
+}
+
+
     }
 
     /** Find an employee with the given id and replace him/her with the
@@ -48,6 +56,13 @@ public class Organization {
         // FILL IN CODE
         // First, find the index of the employee that is going to be laid off by id
 
+        Employee replacement = new Employee(newEmployeeName, newEmployeeSalary, newEmployeeId);
+for (int i = 0; i < employees.size(); i++) {
+    if (id == employees.get(i).getId()) {
+
+        employees.set(i, replacement);
+    }
+}
 
     }
 
@@ -58,7 +73,17 @@ public class Organization {
     public boolean haveTwoEmployeesWithSameName() {
         // FILL IN CODE
 
-        return false; // replace it with your code if needed
+        boolean match = false;
+        for (int i = 0; i < employees.size(); i++) {
+            for (int j = 0; j < employees.size(); j++) {
+                if (employees.get(i).getName() == employees.get(j).getName() && i != j) {
+                    match = true;
+                }
+            }
+        }
+
+
+        return match; // replace it with your code if needed
     }
 
 
@@ -72,6 +97,9 @@ public class Organization {
     public String toString() {
         String res = "";
         // FILL IN CODE
+        for (int i = 0; i < employees.size(); i++) {
+            res += employees.get(i).toString() + System.lineSeparator();
+        }
 
         return res;
     }
