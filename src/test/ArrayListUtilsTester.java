@@ -39,7 +39,10 @@ public class ArrayListUtilsTester {
     public void testComputeMeanEmptyList() {
         ArrayList<Integer> arr = new ArrayList();
         double studentRes = ArrayListUtils.computeMean(arr);
+
+        System.out.println(studentRes);
         double expectedRes = 0.0;
+        System.out.println(expectedRes);
         boolean res = (Math.abs(studentRes - expectedRes) < 0.0001);
         assertTrue("In testComputeMeanEmptyList the result is not as expected", res);
     }
@@ -59,6 +62,12 @@ public class ArrayListUtilsTester {
         ArrayList<Integer> studentRes = new ArrayList(Arrays.asList(9, 3, 2, 10, 1));
         ArrayListUtils.reverse(studentRes);
         ArrayList<Integer> expectedList = new ArrayList(Arrays.asList(1, 10, 2, 3, 9));
+
+        // printing
+        System.out.println(studentRes);
+        // expected
+        System.out.println("actual: 1, 10, 2, 3, 9");
+
         assertTrue(studentRes != null);
         assertTrue(studentRes.size() == expectedList.size());
         for (int i = 0; i < studentRes.size(); i++) {
@@ -85,8 +94,12 @@ public class ArrayListUtilsTester {
         ArrayList<Integer> arr1 = new ArrayList(Arrays.asList(1, 4, 6, 8));
         ArrayList<Integer> arr2 = new ArrayList(Arrays.asList(3, 5, 7, 10));
         ArrayList<Integer> studentRes = ArrayListUtils.mergeSortedArrayLists(arr1, arr2);
-        //System.out.println(studentRes);
+
+        System.out.println(studentRes);
         ArrayList<Integer> expectedList = new ArrayList(Arrays.asList(1, 3, 4, 5, 6, 7, 8, 10));
+
+        System.out.println(expectedList);
+
         // compare student result with expected result
         assertTrue(studentRes != null);
         assertTrue("testMergeSortedArrayLists: size is not as expected", studentRes.size() == expectedList.size());
@@ -101,8 +114,12 @@ public class ArrayListUtilsTester {
         ArrayList<Integer> arr1 = new ArrayList(Arrays.asList(2, 4, 6));
         ArrayList<Integer> arr2 = new ArrayList(Arrays.asList(1, 4, 20, 30, 50));
         ArrayList<Integer> studentRes = ArrayListUtils.mergeSortedArrayLists(arr1, arr2);
-        //System.out.println(studentRes);
+        System.out.println(studentRes);
+
+
         ArrayList<Integer> expectedList = new ArrayList(Arrays.asList(1, 2, 4, 4, 6, 20, 30, 50));
+
+        System.out.println(expectedList);
         // compare student result with expected result
         assertTrue(studentRes != null);
         assertTrue("testMergeSortedArrayLists2: size is not as expected", studentRes.size() == expectedList.size());
@@ -117,8 +134,11 @@ public class ArrayListUtilsTester {
         ArrayList<Integer> arr1 = new ArrayList(Arrays.asList());
         ArrayList<Integer> arr2 = new ArrayList(Arrays.asList(10, 20, 30, 50));
         ArrayList<Integer> studentRes = ArrayListUtils.mergeSortedArrayLists(arr1, arr2);
-        //System.out.println(studentRes);
+        System.out.println(studentRes);
+
         ArrayList<Integer> expectedList = new ArrayList(Arrays.asList(10, 20, 30,50));
+        System.out.println(expectedList);
+
         // compare student result with expected result
         assertTrue(studentRes != null);
         assertTrue("testMergeSortedArrayListsOneEmptyList: size is not as expected", studentRes.size() == expectedList.size());
